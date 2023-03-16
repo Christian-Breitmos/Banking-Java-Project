@@ -10,3 +10,10 @@ The accounts themselves have 2 types: Debit and Savings. Every account, no matte
 
 
 Create JUnit tests for all the non-trivial methods (methods that do more than simply returning or setting variables). Do not just test positive cases (where they are supposed to succeed), also test negative cases (where u want them to fail).
+
+Challenges (Attempt after completing initial project)
+Challenge #1: A proper savings account should accrue interest over time. Create an unchanging variable for the savings account for an annual interest rate of 2%. When returning the balance of the account, the interest should be applied. Do not worry about calculating compound interest, just multiply the balance by 2%).
+
+Challenge #2: Create your own custom exception for your code to throw.
+
+Challenge #3: Your negative tests shouldn’t simply just test for if a value is not equal to another value. They should also make sure that the correct exceptions are being thrown along with the appropriate messages. Try adding the assertThrows method to your negative tests to ensure the correct exceptions are being thrown by your code.
