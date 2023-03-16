@@ -8,7 +8,12 @@ public class Debit extends Account {
     }
     @Override
     public double withdraw(double amount) {
-        return getBalance();
+        if(amount + fee > getBalance()){
+            System.out.println("You don't have sufficient funds.");
+        }else{
+            balance -= (amount + fee);
+        }
+        return balance;
     }
 
 
